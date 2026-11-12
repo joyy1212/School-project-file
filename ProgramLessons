@@ -1,0 +1,2339 @@
+#INTRO
+print("+" + "-" * 60 + "+")
+print("                         PYTHON ACADEMY")
+print("+" + "-" * 60 + "+")
+print("\n")
+print("                 Think. Code. Experiment. Learn.")
+print("\n")
+print("                     WELCOME, FUTURE CODER!\n")
+print("+" + "-" * 60 + "+")
+
+#ENTER STUDENT NAME CONDITION
+while True:
+    student_name = input("\nEnter student name: ").upper()
+    if student_name.isalpha():
+        print("")
+        print("+" + "-" * 60 + "+")
+        print(f"\n                Welcome to Python Academy, {student_name}!")
+        break
+    elif student_name.isdigit():
+        print("Student name should only consist of letters.")
+    else:
+        print("Student name cannot be empty!")
+
+#ENTER ACADEMY CONDITION
+while True:
+    enter_lab = input("\n               Press ENTER to enter the lab...\n")
+    if enter_lab == "":
+        print("+" + "-" * 60 + "+")
+        print("\n                     PYTHON ACADEMY")
+        break
+
+# STUDENT PROGRESS VARIABLES
+
+#7 LESSONS
+lesson1_completed = False
+lesson2_completed = False
+lesson3_completed = False
+lesson4_completed = False
+lesson5_completed = False
+lesson6_completed = False
+lesson7_completed = False
+
+#7 REVIEW
+lesson1_review_completed = False
+lesson1_review_attempted = False
+lesson1_review_needed = False
+lesson2_review_completed = False
+lesson2_review_attempted = False
+lesson2_review_needed = False
+lesson3_review_completed = False
+lesson3_review_attempted = False
+lesson3_review_needed = False
+lesson4_review_completed = False
+lesson4_review_attempted = False
+lesson4_review_needed = False
+lesson5_review_completed = False
+lesson5_review_attempted = False
+lesson5_review_needed = False
+lesson6_review_completed = False
+lesson6_review_attempted = False
+lesson6_review_needed = False
+lesson7_review_completed = False
+lesson7_review_attempted = False
+lesson7_review_needed = False
+
+
+# PROGRAMMER'S JOURNAL
+journal_entries = ""
+
+# PROJECT WORKSHOP
+project_completed = False
+
+#STUDENT DASHBOARD
+print("\n            S T U D E N T   D A S H B O A R D")
+print(f"\nStudent: {student_name}\n")
+student_dashboard = '''
+            [1] ALL ABOUT PYTHON
+                Explore the seven programming lesson.\n
+            [2] HELP CENTER
+                Review basic programming concepts.\n
+            [3] PROGRAMMING JOURNAL
+                Record what you have learned.\n
+            [4] PROJECT WORKSHOP
+                Apply your programming knowledge.\n
+            [5] STUDENT PROGRESS
+                View your learning achievements.\n
+            [6] EXIT'''
+print(student_dashboard)
+
+#STUDENT DASHBOARD CONDITION
+while True:
+    dashboard_choice = input("\nEnter your choice: ")
+    if dashboard_choice == "1":
+        print("+" + "-" * 60 + "+")
+        print("\n           LEARN THE FUNDAMENTALS OF PROGRAMMING\n")
+        print("+" + "-" * 60 + "+")
+
+        #DESCRIPTION FOR FUNDAMENTALS OF PROGRAMMING
+        print("\n                   COURSE DESCRIPTION")
+        print("\nThis course introduces the fundamentals of Python programming,")
+        print("covering basic syntax, arithmetic operations, input and output,")
+        print("conditional statements, logical operators, and loops. It develops")
+        print("students' basic coding skills and logical thinking through simple")
+        print("                    programming activities.\n")
+        print("+" + "-" * 60 + "+")
+
+        #TABLE OF CONTENTS VARIABLE
+        table_of_content = """\n             THE FUNDAMENTALS OF PROGRAMMING
+                  TABLE  OF  CONTENTS\n
+        [1] T H E   O R I G I N   R O O M
+            Introduction to Programming\n
+        [2] S Y N T A X   S T U D I O
+            Python Basic Syntax\n
+        [3] C A L C U L A T I O N   L A B
+            Arithmetic Operators and Expressions\n
+        [4] C O M M U N I C A T I O N   C E N T E R
+            Basic Input and Output.\n
+        [5] D E C I S I O N   R O O M
+            Conditional Statements\n
+        [6] L O G I C   L A B O R A T O R Y
+            Logical Operators\n
+        [7] R E P E T I T I O N   C H A M B E R
+            Iteration and Loops\n
+        [8] BACK TO STUDENT DASHBOARD\n"""
+        print(table_of_content)
+
+        part_of_lesson = """        [1] L E S S O N   O V E R V I E W
+        [2] I M P O R T A N T   N O T E S
+        [3] C O D E   E X A M P L E S
+        [4] K N O W L E D G E   C H E C K
+        [5] B A C K   T O   R O O M   C H O I C E S"""
+
+
+
+        #LESSON CHOICE CONDITION
+        while True:
+            room_choice = input("\nChoose a lesson: ")
+
+            #LESSON 1 OVERVIEW
+            if room_choice == "1":
+                print("+" + "-" * 60 + "+")
+                print("\n             T H E   O R I G I N   R O O M")
+                print("              Introduction to Programming\n")
+                print(part_of_lesson)
+                while True:
+                    lesson1_choice = input("\nEnter your choice: ")
+                    if lesson1_choice == "1":
+                        print("+" + "-" * 60 + "+")
+                        print("\n               Introduction to Programming")
+                        print("\nLesson Overview")
+                        print("\nProgramming is the process of writing instructions that tell a")
+                        print("computer what to do. These instructions are written using")
+                        print("programming languages such as Python, Java, and C++.\n")
+                        print("Python is a popular programming language known for its simple and")
+                        print("readable syntax. It is used in different fields, including web")
+                        print("development, automation, data analysis, and artificial intelligence.\n")
+
+                        #END LESSON 1 OVERVIEW
+                        while True:
+                            end_lesson1_overview = input("\nPress Enter back to Lesson choices...")
+                            if end_lesson1_overview == "":
+                                print("+" + "-" * 60 + "+")
+                                print("\n             T H E   O R I G I N   R O O M")
+                                print("              Introduction to Programming\n")
+                                print(part_of_lesson)
+                                break
+                    elif lesson1_choice == "2":
+                        print("+" + "-" * 60 + "+")
+                        print("\n               Introduction to Programming")
+                        print("\nImportant Notes")
+                        print("\n1. What is Programming?")
+                        print("Programming involves writing instructions that a computer can")
+                        print("understand and execute.")
+                        print("These instructions are written using a programming language.")
+                        print(" Programmers use programming languages to create applications,")
+                        print("websites, and other computer programs.")
+                        print("\n2. Introduction to Python")
+                        print("Python is a high-level programming language.")
+                        print("It is known for having simple and readable syntax.")
+                        print("It can be used for web development, automation, data analysis,")
+                        print("and artificial intelligence.")
+                        print("Python is beginner-friendly and widely used by programmers.")
+                        print("\n3. Who Created Python?")
+                        print("Python was created by **Guido van Rossum**, a Dutch programmer.")
+                        print("Python was first released in 1991.")
+                        print("He designed Python to be easy to read and understand.")
+                        print("\n4. Why Learn Python?")
+                        print("It has simple and readable syntax.")
+                        print("It is useful for many types of projects.")
+                        print("It is suitable for beginners.")
+                        print("It is widely used in the technology industry.")
+
+                        #END LESSON 1 IMPORTANT NOTES
+                        while True:
+                            end_lesson1_importantNotes = input("\nPress Enter back to Lesson choices...")
+                            if end_lesson1_importantNotes == "":
+                                print("+" + "-" * 60 + "+")
+                                print("\n             T H E   O R I G I N   R O O M")
+                                print("              Introduction to Programming\n")
+                                print(part_of_lesson)
+                                break
+                    #LESSON 1 CODE EXAMPLES
+                    elif lesson1_choice == "3":
+                        print("+" + "-" * 60 + "+")
+                        print("\n               Introduction to Programming")
+                        print("\nCode Example")
+                        lesson1_codeExample1 = '''print("Hello, World!")
+                        print("Welcome to Python Programming!")'''
+                        print(lesson1_codeExample1)
+                        print("\nExpected Output:")
+                        print("Hello, World!")
+                        print("Welcome to Python Programming!")
+                        print("\nThe print() function displays text on the screen. It is")
+                        print("one of the basic commands used in Python.")
+
+                        #END OF CODE EXAMPLES
+                        while True:
+                            end_lesson1_codeExamples = input("\nPress Enter back to Lesson choices...")
+                            if end_lesson1_codeExamples == "":
+                                print("+" + "-" * 60 + "+")
+                                print("\n             T H E   O R I G I N   R O O M")
+                                print("              Introduction to Programming\n")
+                                print(part_of_lesson)
+                                break
+
+                    # LESSON 1 KNOWLEDGE CHECK
+                    elif lesson1_choice == "4":
+
+                        while True:
+                            print("+" + "-" * 60 + "+")
+                            print("\n          INTRODUCTION TO PROGRAMMING")
+                            print("\n                 KNOWLEDGE CHECK")
+
+                            # QUESTION 1
+                            print("\n1. What is programming?")
+                            print("\nA. Using a computer to play games")
+                            print("B. Writing instructions for a computer to follow")
+                            print("C. Designing computer hardware")
+
+                            lesson1_answer1 = input("\nYour answer: ").upper()
+
+                            # QUESTION 2
+                            print("\n2. Who created Python?")
+                            print("\nA. Bill Gates")
+                            print("B. Steve Jobs")
+                            print("C. Guido van Rossum")
+
+                            lesson1_answer2 = input("\nYour answer: ").upper()
+
+                            # QUESTION 3
+                            print("\n3. In what year was Python first released?")
+                            print("\nA. 1985")
+                            print("B. 1991")
+                            print("C. 2000")
+
+                            lesson1_answer3 = input("\nYour answer: ").upper()
+
+                            # KNOWLEDGE CHECK RESULTS
+                            print("\n" + "=" * 60)
+                            print("                 KNOWLEDGE CHECK RESULTS")
+                            print("=" * 60)
+
+                            #LESSON 1 SCORE
+                            lesson1_score = 0
+
+                            if lesson1_answer1 == "B":
+                                lesson1_score += 1
+
+                            if lesson1_answer2 == "C":
+                                lesson1_score += 1
+
+                            if lesson1_answer3 == "B":
+                                lesson1_score += 1
+
+                            print("\nYour Score:", lesson1_score, "/ 3")
+
+                            if lesson1_score >= 2:
+                                lesson1_completed = True
+                                print("\nLesson 1 Completed!")
+                                print("You have shown a good understanding of this lesson.")
+                            else:
+                                print("\nLesson 1 Not Yet Completed.")
+                                print("Please review the lesson and try again.")
+
+                            # RETRY OPTIONS (FOR BOTH CORRECT AND INCORRECT ANSWERS)
+                            print("\nPress 1 to retry knowledge check...")
+                            print("Press ENTER to return to lesson choices...\n")
+
+                            while True:
+                                knowledgeCheck1_retry = input("\nEnter your choice: ")
+
+                                if knowledgeCheck1_retry == "1":
+                                    break
+
+                                elif knowledgeCheck1_retry == "":
+                                    print("+" + "-" * 60 + "+")
+                                    print("\n             T H E   O R I G I N   R O O M")
+                                    print("              Introduction to Programming\n")
+                                    print(part_of_lesson)
+                                    break
+
+                                else:
+                                    print("Invalid choice! Please enter 1 or press ENTER.")
+
+                            # CHECK RETRY CHOICE
+                            if knowledgeCheck1_retry == "1":
+                                continue
+
+                            else:
+                                break
+
+                    #LESSON 1 BACK TO LESSON CHOICES
+                    elif lesson1_choice == "5":
+                        print("+" + "-" * 60 + "+")
+                        print(table_of_content)
+                        break
+                    else:
+                        print("Please enter a valid choice.")
+
+            #LESSON 2
+            elif room_choice == "2":
+                print("+" + "-" * 60 + "+")
+                print("\n                 S Y N T A X   S T U D I O")
+                print("                   Python Basic Syntax\n")
+                print(part_of_lesson)
+                while True:
+                    lesson2_choice = input("\nEnter your choice: ")
+                    if lesson2_choice == "1":
+                        print("+" + "-" * 60 + "+")
+                        print("\n                   Python Basic Syntax\n")
+                        print("Lesson Overview")
+                        print("\nSyntax refers to the rules that determine how Python instructions")
+                        print("should be written. Just like human languages have grammar rules,")
+                        print("Python has its own rules that programmers must follow.")
+                        print("\nUnderstanding basic Python syntax helps programmers write")
+                        print("instructions correctly and avoid errors.\n")
+
+                        #END OF LESSON 2 LESSON OVERVIEW
+                        while True:
+                            end_lesson2_overView = input("\nPress Enter back to Lesson choices...")
+                            if end_lesson2_overView == "":
+                                print("+" + "-" * 60 + "+")
+                                print("\n                 S Y N T A X   S T U D I O")
+                                print("                   Python Basic Syntax\n")
+                                print(part_of_lesson)
+                                break
+
+                    #LESSON 2 IMPORTANT NOTES
+                    elif lesson2_choice == "2":
+                        print("+" + "-" * 60 + "+")
+                        print("                   Python Basic Syntax\n")
+                        print("Important Notes")
+                        print("\n1. Python is Case-Sensitive")
+                        print("Python recognizes uppercase and lowercase letters as different characters.")
+                        print("Example:")
+                        lesson2_importantNotes_1 = '''name = "Alex"
+Name = "John"'''
+                        print(lesson2_importantNotes_1)
+                        print("The variables name and Name are treated as two different variables.")
+                        print("\n2. Strings")
+                        print("A string is a group of characters enclosed in quotation marks.")
+                        print("Example:")
+                        lesson2_importantNotes_2 = '''student = "Christine"'''
+                        print(lesson2_importantNotes_2)
+                        print("\n3. Variables")
+                        print("A variable is a named storage location used to hold information.")
+                        print("Example:")
+                        lesson2_importantNotes_3 = '''age = 20
+student_name = "Alex"'''
+                        print(lesson2_importantNotes_3)
+                        print("\n4. Comments")
+                        print("Comments are notes written in the code that Python does not execute.")
+                        print("Use the # symbol to create a single-line comment.")
+                        print("Example:")
+                        lesson2_importantNotes_4 = '''# This is my first Python program
+print("Hello!")'''
+                        print(lesson2_importantNotes_4)
+                        print("\n5. Indentation")
+                        print("Indentation refers to the spaces at the beginning of a line. Python")
+                        print("uses indentation to identify blocks of code.")
+                        print("\n6. Common Syntax Reminders")
+                        print("Use quotation marks for strings.")
+                        print("Use an equal sign (=) to assign values to variables.")
+                        print("Follow proper indentation.")
+                        print("Check spelling and capitalization.")
+                        print("Make sure parentheses and quotation marks are properly closed.")
+
+                        #END OF LESSON 2 IMPORTANT NOTES
+                        while True:
+                            end_lesson2_importantNotes = input("\nPress Enter back to Lesson choices...")
+                            if end_lesson2_importantNotes == "":
+                                print("+" + "-" * 60 + "+")
+                                print("\n                 S Y N T A X   S T U D I O")
+                                print("                   Python Basic Syntax\n")
+                                print(part_of_lesson)
+                                break
+
+                    #LESSON 2 CODE EXAMPLES
+                    elif lesson2_choice == "3":
+                        print("+" + "-" * 60 + "+")
+                        print("                   Python Basic Syntax\n")
+                        print("Example Codes")
+                        lesson2_codeExample1 = '''student_name = "Alex"
+age = 18
+course = "Computer Technology"
+
+print("STUDENT INFORMATION")
+print("Name:", student_name)
+print("Age:", age)
+print("Course:", course)'''
+                        print("\n# Student Information")
+                        print(lesson2_codeExample1)
+                        print("\nExpected Output:")
+                        lesson2_codeExample2 = '''STUDENT INFORMATION
+Name: Alex
+Age: 18
+Course: Computer Technology'''
+                        print(lesson2_codeExample2)
+                        print("\n")
+                        print("This program stores information in variables and displays")
+                        print("it using print().")
+
+                        #END OF LESSON 2 CODE EXAMPLES
+                        while True:
+                            end_lesson2_codeExample = input("\nPress Enter back to Lesson choices...")
+                            if end_lesson2_codeExample == "":
+                                print("+" + "-" * 60 + "+")
+                                print("\n                 S Y N T A X   S T U D I O")
+                                print("                   Python Basic Syntax\n")
+                                print(part_of_lesson)
+                                break
+
+                    #LESSON 2 KNOWLEDGE CHECK
+                    elif lesson2_choice == "4":
+                        while True:
+                            print("+" + "-" * 60 + "+")
+                            print("                   Python Basic Syntax\n")
+                            print("Knowledge Check")
+
+                            print("\n1. What is a variable in Python?")
+                            print("A. A command used to close a program ")
+                            print("B. A named storage location for information ")
+                            print("C. A type of computer")
+
+                            lesson2_answer1 = input("\nYour answer: ").upper()
+
+                            print("\n2. Which of the following is a valid string?")
+                            print("A. student = Alex ")
+                            print("B. student = (Alex)")
+                            print('C. student = "Alex"')
+
+                            lesson2_answer2 = input("\nYour answer: ").upper()
+
+                            print("\n3. What does the # symbol represent in Python?")
+                            print("A. A comment")
+                            print("B. A multiplication operator")
+                            print("C. A variable")
+
+                            lesson2_answer3 = input("\nYour answer: ").upper()
+
+                            # LESSON 2 KNOWLEDGE CHECK RESULTS
+                            print("\n" + "=" * 60)
+                            print("              KNOWLEDGE CHECK RESULTS")
+                            print("=" * 60)
+
+                            # LESSON 2 SCORE
+                            lesson2_score = 0
+
+                            if lesson2_answer1 == "B":
+                                lesson2_score += 1
+
+                            if lesson2_answer2 == "C":
+                                lesson2_score += 1
+
+                            if lesson2_answer3 == "A":
+                                lesson2_score += 1
+
+                            print("\nYour Score:", lesson2_score, "/ 3")
+
+                            if lesson2_score >= 2:
+                                lesson2_completed = True
+                                print("\nLesson 2 Completed!")
+                                print("You have shown a good understanding of this lesson.")
+                            else:
+                                print("\nLesson 2 Not Yet Completed.")
+                                print("Please review the lesson and try again.")
+
+                            # RETRY LESSON 2 KNOWLEDGE CHECK
+                            print("\nPress 2 to retry knowledge check...")
+                            print("Press ENTER back to lesson choices...")
+
+                            while True:
+                                knowledgeCheck2_retry = input("\nEnter your choice: ")
+                                if knowledgeCheck2_retry == "1":
+                                    break
+                                elif knowledgeCheck2_retry == "":
+                                    print("+" + "-" * 60 + "+")
+                                    print("\n                 S Y N T A X   S T U D I O")
+                                    print("                   Python Basic Syntax\n")
+                                    print(part_of_lesson)
+                                    break
+                                else:
+                                    print("Invalid choice! Please enter 1 or press ENTER.")
+
+                            # END OF LESSON 2 KNOWLEDGE CHECK
+                            if knowledgeCheck2_retry == "1":
+                                continue
+                            else:
+                                break
+
+                    # LESSON 2 BACK TO LESSON CHOICES
+                    elif lesson2_choice == "5":
+                        print(table_of_content)
+                        break
+                    else:
+                        print("Please enter a valid choice.")
+
+            #LESSON 3
+            elif room_choice == "3":
+                print("+" + "-" * 60 + "+")
+                print("\n               C A L C U L A T I O N   L A B")
+                print("            Arithmetic Operators and Expressions\n")
+                print(part_of_lesson)
+                while True:
+                    lesson3_choice = input("\nEnter your choice: ")
+
+                    #LESSON 3 OVERVIEW
+                    if lesson3_choice == "1":
+                        print("+" + "-" * 60 + "+")
+                        print("\n            Arithmetic Operators and Expressions")
+                        print("\nLesson Overview")
+                        print("Arithmetic operators are symbols used to perform mathematical")
+                        print("calculations in Python. They allow programmers to add, subtract,")
+                        print("multiply, divide, and perform other mathematical operations.")
+                        print("\nThese operators are useful in programs involving money,")
+                        print("measurements, grades, discounts, and other calculations.")
+
+                        # END OF LESSON 3 LESSON OVERVIEW
+                        while True:
+                            end_lesson3_overView = input("\nPress Enter back to Lesson choices...")
+                            if end_lesson3_overView == "":
+                                print("+" + "-" * 60 + "+")
+                                print("\n               C A L C U L A T I O N   L A B")
+                                print("            Arithmetic Operators and Expressions\n")
+                                print(part_of_lesson)
+                                break
+
+                    #LESSON 3 IMPORTANT NOTES
+                    elif lesson3_choice == "2":
+                        print("+" + "-" * 60 + "+")
+                        print("            Arithmetic Operators and Expressions\n")
+                        print("Important Notes:\n")
+                        print("+-----------------------------------------------------------------------------+")
+                        print("| Operator | Name           | Purpose                           | Example     |")
+                        print("|----------|----------------|-----------------------------------|-------------|")
+                        print("| +        | Addition       | Adds values                       | 10 + 5 = 15 |")
+                        print("| *        | Multiplication | Multiplies values                 | 10 * 5 = 50 |")
+                        print("| /        | Division       | Divides values                    | 10 / 5 = 2.0|")
+                        print("| //       | Floor Division | Returns the whole-number quotient | 10 // 3 = 3 |")
+                        print("| %        | Modulus        | Returns the remainder             | 10 % 3 = 1  |")
+                        print("| **       | Exponentiation | Raises a number to a power        | 2 ** 3 = 8  |")
+                        print("+-----------------------------------------------------------------------------+")
+                        print("\nImportant Reminders:\n")
+                        print("1. Multiplication and division are performed before addition and subtraction.")
+                        print("   It follows the PEMDAS rule.")
+                        print("2. Parentheses can be used to control the order of operations.")
+                        print("3. Division using / can produce a decimal result.")
+                        print("4. Modulus (%) returns the remainder after division.")
+                        print("\nExample:")
+                        lesson3_importantNote_example1 = '''result = (10 + 5) * 2
+print(result)'''
+                        print(lesson3_importantNote_example1)
+                        print("\nOutput:")
+                        lesson3_importantNote_example2 = '''30'''
+                        print(lesson3_importantNote_example2)
+
+                        # END OF LESSON 3 IMPORTANT NOTES
+                        while True:
+                            end_lesson3_importantNotes = input("\nPress Enter back to Lesson choices...")
+                            if end_lesson3_importantNotes == "":
+                                print("+" + "-" * 60 + "+")
+                                print("\n               C A L C U L A T I O N   L A B")
+                                print("            Arithmetic Operators and Expressions\n")
+                                print(part_of_lesson)
+                                break
+
+                        # LESSON 3 CODE EXAMPLES
+                    elif lesson3_choice == "3":
+                        print("+" + "-" * 60 + "+")
+                        print("\n            Arithmetic Operators and Expressions")
+                        print("\nExample Codes")
+                        print("\nCalculating a Customer's Total Bill")
+                        lesson3_codeExample1 = '''price = 120
+quantity = 3
+
+total = price * quantity
+
+print("Price:", price)
+print("Quantity:", quantity)
+print("Total Amount:", total)'''
+                        print(lesson3_codeExample1)
+                        print("\nExpected Output:")
+                        lesson3_codeExample2 = '''Price: 120
+Quantity: 3
+Total Amount: 360'''
+                        print(lesson3_codeExample2)
+                        print("\nExplanation:")
+                        print("The price of one item is 120.")
+                        print("The customer purchases 3 items.")
+                        print("\nPython multiplies the price by the quantity.")
+                        print("The total amount is 360.")
+
+                        # END OF LESSON 3 CODE EXAMPLES
+                        while True:
+                            end_lesson3_codeExample = input("\nPress Enter back to Lesson choices...")
+                            if end_lesson3_codeExample == "":
+                                print("+" + "-" * 60 + "+")
+                                print("\n               C A L C U L A T I O N   L A B")
+                                print("            Arithmetic Operators and Expressions\n")
+                                print(part_of_lesson)
+                                break
+
+                        # LESSON 3 KNOWLEDGE CHECK
+                    elif lesson3_choice == "4":
+                        while True:
+                            print("+" + "-" * 60 + "+")
+                            print("\n            Arithmetic Operators and Expressions")
+                            print("\nKnowledge Check")
+                            print("\n1. Which operator is used for multiplication?")
+                            print("A. 3")
+                            print("B. -")
+                            print("C. *")
+
+                            lesson3_answer1 = input("\nYour answer: ").upper()
+
+                            print("\n2. What is the result of 15 % 4?")
+                            print("A. 3")
+                            print("B. 4")
+                            print("C. 11")
+
+                            lesson3_answer2 = input("\nYour answer: ").upper()
+
+                            print("\n3. What is the result of (8 + 2) * 3?")
+                            print("A. 13 ")
+                            print("B. 30")
+                            print("C. 24")
+
+                            lesson3_answer3 = input("\nYour answer: ").upper()
+
+                            # LESSON 3 KNOWLEDGE CHECK RESULTS
+                            print("\n" + "=" * 60)
+                            print("              KNOWLEDGE CHECK RESULTS")
+                            print("=" * 60)
+
+                            # LESSON 3 SCORE
+                            lesson3_score = 0
+
+                            if lesson3_answer1 == "C":
+                                lesson3_score += 1
+
+                            if lesson3_answer2 == "A":
+                                lesson3_score += 1
+
+                            if lesson3_answer3 == "B":
+                                lesson3_score += 1
+
+                            print("\nYour Score:", lesson3_score, "/ 3")
+
+                            if lesson3_score >= 2:
+                                lesson3_completed = True
+                                print("\nLesson 3 Completed!")
+                                print("You have shown a good understanding of this lesson.")
+                            else:
+                                print("\nLesson 3 Not Yet Completed.")
+                                print("Please review the lesson and try again.")
+
+                            print("\nPress 1 to retry knowledge check...")
+                            print("Press ENTER back to lesson choices...\n")
+
+                            # RETRY LESSON 3 KNOWLEDGE CHECK
+                            while True:
+                                knowledgeCheck3_retry = input("Enter your choice: ")
+                                if knowledgeCheck3_retry == "1":
+                                    break
+                                elif knowledgeCheck3_retry == "":
+                                    print("+" + "-" * 60 + "+")
+                                    print("\n               C A L C U L A T I O N   L A B")
+                                    print("            Arithmetic Operators and Expressions\n")
+                                    print(part_of_lesson)
+                                    break
+                                else:
+                                    print("Please enter a valid choice.\n")
+                            if knowledgeCheck3_retry == "1":
+                                continue
+                            else:
+                                break
+
+                        # LESSON 3 BACK TO LESSON CHOICES
+                    elif lesson3_choice == "5":
+                        print(table_of_content)
+                        break
+                    else:
+                        print("Please enter a valid choice.")
+
+            #LESSON 4
+            elif room_choice == "4":
+                print("+" + "-" * 60 + "+")
+                print("\n            C O M M U N I C A T I O N   C E N T E R")
+                print("                    Basic Input and Output\n")
+                print(part_of_lesson)
+                while True:
+                    lesson4_choice = input("\nEnter your choice: ")
+
+                    # LESSON 4 OVERVIEW
+                    if lesson4_choice == "1":
+                        print("+" + "-" * 60 + "+")
+                        print("\n                    Basic Input and Output")
+                        print("\nLesson Overview")
+                        print("Input and output are important parts of programming. Input allows")
+                        print("users to provide information to a program, while output displays ")
+                        print("information or results on the screen.")
+                        print("\nPython uses the input() function to receive information and the print()")
+                        print("function to display information.")
+
+                        # END OF LESSON 4 LESSON OVERVIEW
+                        while True:
+                            end_lesson4_overView = input("\nPress Enter back to Lesson choices...")
+                            if end_lesson4_overView == "":
+                                print("+" + "-" * 60 + "+")
+                                print("\n            C O M M U N I C A T I O N   C E N T E R")
+                                print("                    Basic Input and Output\n")
+                                print(part_of_lesson)
+                                break
+
+                    # LESSON 4 IMPORTANT NOTES
+                    elif lesson4_choice == "2":
+                        print("+" + "-" * 60 + "+")
+                        print("\n                    Basic Input and Output")
+                        print("\nImportant Notes")
+                        print("\n1. Output – print()")
+                        print("Example:")
+                        lesson4_importantNotes1 = '''print("Hello, Student!")'''
+                        print(lesson4_importantNotes1)
+                        print("Output:")
+                        lesson4_importantNotes2 = '''Hello, Student!'''
+                        print(lesson4_importantNotes2)
+                        print("2. Input – input()")
+                        print("The input() function allows users to enter information through the keyboard.")
+                        print("Example:")
+                        lesson4_importantNotes3 = '''name = input("Enter your name: ")'''
+                        print(lesson4_importantNotes3)
+                        print("3. Converting Input into Numbers")
+                        print("By default, input() receives information as a string, even when the user enters")
+                        print("a number.")
+                        print("\nUse int() to convert input into a whole number.")
+                        print("\nUse float() to convert input into a decimal number.")
+                        print("\nExample:")
+                        lesson4_importantNotes4 = '''age = int(input("Enter your age: "))
+price = float(input("Enter the price: "))'''
+                        print("4. Displaying Variables")
+                        print("You can use print() to display values stored in variables.")
+                        print("\nExample:")
+                        lesson4_importantNotes5 = '''name = "Alex"
+print("Welcome,", name)'''
+                        print(lesson4_importantNotes5)
+                        # END OF LESSON 4 IMPORTANT NOTES
+                        while True:
+                            end_lesson4_importantNotes = input("\nPress Enter back to Lesson choices...")
+                            if end_lesson4_importantNotes == "":
+                                print("+" + "-" * 60 + "+")
+                                print("\n            C O M M U N I C A T I O N   C E N T E R")
+                                print("                    Basic Input and Output\n")
+                                print(part_of_lesson)
+                                break
+
+                        # LESSON 4 CODE EXAMPLES
+                    elif lesson4_choice == "3":
+                        print("+" + "-" * 60 + "+")
+                        print("\n                    Basic Input and Output")
+                        print("\nExample Codes")
+                        print("\nSimple Student Greeting Program\n")
+                        lesson4_codeExample1 = '''student_name = input("Enter your name: ")
+age = input("Enter your age: ")
+
+print("STUDENT INFORMATION")
+print("Name:", student_name)
+print("Age:", age)
+
+print("Welcome to Python Lab!")'''
+                        print(lesson4_codeExample1)
+                        print("Sample Output:")
+                        lesson4_codeExample2 = '''Enter your name: Alex
+Enter your age: 18
+
+STUDENT INFORMATION
+Name: Alex
+Age: 18
+
+Welcome to Python Lab!'''
+                        print(lesson4_codeExample2)
+                        print("\nExplanation:")
+                        print("The program asks the user for a name and age, stores the answers the answers in")
+                        print("variables, and displays the information.\n")
+
+                        # END OF LESSON 4 CODE EXAMPLES
+                        while True:
+                            end_lesson4_codeExample = input("\nPress Enter back to Lesson choices...")
+                            if end_lesson4_codeExample == "":
+                                print("+" + "-" * 60 + "+")
+                                print("\n            C O M M U N I C A T I O N   C E N T E R")
+                                print("                    Basic Input and Output\n")
+                                print(part_of_lesson)
+                                break
+
+                        # LESSON 4 KNOWLEDGE CHECK
+                    elif lesson4_choice == "4":
+                        while True:
+                            print("+" + "-" * 60 + "+")
+                            print("\n                    Basic Input and Output")
+                            print("\nKnowledge Check")
+                            print("\n1. Which function is used to receive information from the user?")
+                            print("A. print()")
+                            print("B. input()")
+                            print("C. int()")
+
+                            lesson4_answer1 = input("\nYour answer: ").upper()
+
+                            print("\n2. Which function displays information on the screen?")
+                            print("A. print()")
+                            print("B. input()")
+                            print("C. float()")
+
+                            lesson4_answer2 = input("\nYour answer: ").upper()
+
+                            print("\n3. What is the purpose of int() when used with input()?")
+                            print("A. To display information ")
+                            print("B. To convert input into a whole number")
+                            print("C. To convert input into a string")
+
+                            lesson4_answer3 = input("\nYour answer: ").upper()
+
+                            # LESSON 4 KNOWLEDGE CHECK RESULTS
+                            print("\n" + "=" * 60)
+                            print("              KNOWLEDGE CHECK RESULTS")
+                            print("=" * 60)
+
+                            # LESSON 4 SCORE
+                            lesson4_score = 0
+
+                            if lesson4_answer1 == "B":
+                                lesson4_score += 1
+
+                            if lesson4_answer2 == "A":
+                                lesson4_score += 1
+
+                            if lesson4_answer3 == "B":
+                                lesson4_score += 1
+
+                            print("\nYour Score:", lesson4_score, "/ 3")
+
+                            if lesson4_score >= 2:
+                                lesson4_completed = True
+                                print("\nLesson 4 Completed!")
+                                print("You have shown a good understanding of this lesson.")
+                            else:
+                                print("\nLesson 4 Not Yet Completed.")
+                                print("Please review the lesson and try again.")
+
+                            print("\nPress 1 to retry knowledge check...")
+                            print("Press ENTER back to lesson choices...")
+
+                            # RETRY LESSON 4 KNOWLEDGE CHECK
+                            while True:
+                                knowledgeCheck4_retry = input("\nEnter your choice: ")
+                                if knowledgeCheck4_retry == "1":
+                                    break
+                                elif knowledgeCheck4_retry == "":
+                                    print("+" + "-" * 60 + "+")
+                                    print("\n            C O M M U N I C A T I O N   C E N T E R")
+                                    print("                    Basic Input and Output\n")
+                                    print(part_of_lesson)
+                                    break
+                                else:
+                                    print("Please enter a valid choice.")
+                            if knowledgeCheck4_retry == "1":
+                                continue
+                            else:
+                                break
+
+                        # LESSON 4 BACK TO LESSON CHOICES
+                    elif lesson4_choice == "5":
+                        print(table_of_content)
+                        break
+                    else:
+                        print("Please enter a valid choice.")
+
+            #LESSON 5
+            elif room_choice == "5":
+                print("+" + "-" * 60 + "+")
+                print("\n                D E C I S I O N   R O O M")
+                print("                 Conditional Statements\n")
+                print(part_of_lesson)
+                while True:
+                    lesson5_choice = input("\nEnter your choice: ")
+
+                    # LESSON 5 OVERVIEW
+                    if lesson5_choice == "1":
+                        print("+" + "-" * 60 + "+")
+                        print("\n                 Conditional Statements")
+                        print("\nLesson Overview")
+                        print("\nConditional statements allow Python programs to make decisions")
+                        print("based on certain conditions.")
+                        print("\nThey help a program determine which instructions should be")
+                        print("performed depending on whether a condition is true or false.")
+                        print("\nConditional statements are useful in applications involving grades,")
+                        print("age verification, passwords, discounts, and user choices.\n")
+
+                        # END OF LESSON 5 LESSON OVERVIEW
+                        while True:
+                            end_lesson5_overView = input("\nPress Enter back to Lesson choices...")
+                            if end_lesson5_overView == "":
+                                print("+" + "-" * 60 + "+")
+                                print("\n                D E C I S I O N   R O O M")
+                                print("                 Conditional Statements\n")
+                                print(part_of_lesson)
+                                break
+
+                        # LESSON 5 IMPORTANT NOTES
+                    elif lesson5_choice == "2":
+                        print("+" + "-" * 60 + "+")
+                        print("\n                 Conditional Statements")
+                        print("\nImportant Notes")
+                        print("\n1. if Statement")
+                        print("The if statement executes a block of code when the condition is true.")
+                        print("\nExample:")
+                        lesson5_importantNotes1 = '''age = 18
+
+if age >= 18:
+    print("You are an adult.")'''
+                        print(lesson5_importantNotes1)
+                        print("\n2. if-else Statement")
+                        print("The else statement provides another action when the if condition is false.")
+                        print("\nExample:")
+                        lesson5_importantNotes2 = '''age = 15
+
+if age >= 18:
+    print("You are an adult.")
+else:
+    print("You are a minor.")'''
+                        print(lesson5_importantNotes2)
+                        print("\n3. if-elif-else Statement")
+                        print("The elif statement allows a program to check multiple conditions.")
+                        print("\nExample:")
+                        lesson5_importantNotes3 = '''score = 85
+
+if score >= 90:
+    print("Excellent")
+elif score >= 75:
+    print("Passed")
+else:
+    print("Failed")'''
+                        print(lesson5_importantNotes3)
+                        print("\n4. Comparison Operators\n")
+                        print("+-------------------------------------+")
+                        print("| Operator | Meaning                  |")
+                        print("|----------|--------------------------|")
+                        print("| ==       | Equal to                 |")
+                        print("| >        | Greater than             |")
+                        print("| <        | Less than                |")
+                        print("| >=       | Greater than or equal to |")
+                        print("| <=       | Less than or equal to    |")
+                        print("+-------------------------------------+")
+                        print("\nImportant Reminder:")
+                        print("Python uses indentation to identify the statements belonging to")
+                        print("an if, elif, or else block.")
+
+                        # END OF LESSON 5 IMPORTANT NOTES
+                        while True:
+                            end_lesson5_importantNotes = input("\nPress Enter back to Lesson choices...")
+                            if end_lesson5_importantNotes == "":
+                                print("+" + "-" * 60 + "+")
+                                print("\n                D E C I S I O N   R O O M")
+                                print("                 Conditional Statements\n")
+                                print(part_of_lesson)
+                                break
+
+                        # LESSON 5 CODE EXAMPLES
+                    elif lesson5_choice == "3":
+                        print("+" + "-" * 60 + "+")
+                        print("\n                 Conditional Statements")
+                        print("\nExample Codes")
+                        print("\nSimple Pass or Fail Program\n")
+                        lesson5_codeExample1 = '''score = int(input("Enter your score: "))
+
+if score >= 75:
+    print("Congratulations! You passed.")
+else:
+    print("Sorry, you failed.")'''
+                        print(lesson5_codeExample1)
+                        print("\nSample Output 1:\n")
+                        lesson5_codeExample2 = '''Enter your score: 85
+Congratulations! You passed.'''
+                        print(lesson5_codeExample2)
+                        print("\nSample Output 2:\n")
+                        lesson5_codeExample3 = '''Enter your score: 60
+Sorry, you failed.'''
+                        print(lesson5_codeExample3)
+                        print("\nExplanation:")
+                        print("The program checks whether the student's score is at least 75.")
+                        print("If true, it displays Passed. Otherwise, it displays Failed.")
+
+                        # END OF LESSON 5 CODE EXAMPLES
+                        while True:
+                            end_lesson5_codeExample = input("\nPress Enter back to Lesson choices...")
+                            if end_lesson5_codeExample == "":
+                                print("+" + "-" * 60 + "+")
+                                print("\n                D E C I S I O N   R O O M")
+                                print("                 Conditional Statements\n")
+                                print(part_of_lesson)
+                                break
+
+                        # LESSON 5 KNOWLEDGE CHECK
+                    elif lesson5_choice == "4":
+                        while True:
+                            print("+" + "-" * 60 + "+")
+                            print("\n                 Conditional Statements")
+                            print("\nKnowledge Check")
+                            print("\n1. What is the purpose of an if statement?")
+                            print("A. To repeat instructions")
+                            print("B. To check a condition")
+                            print("C. To receive information")
+
+                            lesson5_answer1 = input("\nYour answer: ").upper()
+
+                            print("\n2. Which statement is used when the if condition is false?")
+                            print("A. print ")
+                            print("B. input")
+                            print("C. else")
+
+                            lesson5_answer2 = input("\nYour answer: ").upper()
+
+                            print("\n3. Which operator means 'equal to' in Python?")
+                            print("A. =")
+                            print("B. ==")
+                            print("C. != ")
+
+                            lesson5_answer3 = input("\nYour answer: ").upper()
+
+                            # LESSON 5 KNOWLEDGE CHECK RESULTS
+                            print("\n" + "=" * 60)
+                            print("              KNOWLEDGE CHECK RESULTS")
+                            print("=" * 60)
+
+                            # LESSON 5 SCORE
+                            lesson5_score = 0
+
+                            if lesson5_answer1 == "B":
+                                lesson5_score += 1
+
+                            if lesson5_answer2 == "C":
+                                lesson5_score += 1
+
+                            if lesson5_answer3 == "B":
+                                lesson5_score += 1
+
+                            print("\nYour Score:", lesson5_score, "/ 3")
+
+                            if lesson5_score >= 2:
+                                lesson5_completed = True
+                                print("\nLesson 5 Completed!")
+                                print("You have shown a good understanding of this lesson.")
+                            else:
+                                print("\nLesson 5 Not Yet Completed.")
+                                print("Please review the lesson and try again.")
+
+                            print("\nPress 1 to retry knowledge check...")
+                            print("Press ENTER back to lesson choices...")
+
+                            # RETRY LESSON 5 KNOWLEDGE CHECK
+                            while True:
+                                knowledgeCheck5_retry = input("\nEnter your choice: ")
+                                if knowledgeCheck5_retry == "1":
+                                    break
+                                elif knowledgeCheck5_retry == "":
+                                    print("+" + "-" * 60 + "+")
+                                    print("\n                D E C I S I O N   R O O M")
+                                    print("                 Conditional Statements\n")
+                                    print(part_of_lesson)
+                                    break
+                                else:
+                                    print("Please enter a valid choice.")
+
+                            if knowledgeCheck5_retry == "1":
+                                continue
+                            else:
+                                break
+
+                    # LESSON 5 BACK TO LESSON CHOICES
+                    elif lesson5_choice == "5":
+                        print(table_of_content)
+                        break
+                    else:
+                        print("Please enter a valid choice.")
+
+            #LESSON 6
+            elif room_choice == "6":
+                print("+" + "-" * 60 + "+")
+                print("\n              L O G I C   L A B O R A T O R Y")
+                print("                     Logical Operators\n")
+                print(part_of_lesson)
+                while True:
+                    lesson6_choice = input("\nEnter your choice: ")
+
+                    # LESSON 6 OVERVIEW
+                    if lesson6_choice == "1":
+                        print("+" + "-" * 60 + "+")
+                        print("\n                     Logical Operators")
+                        print("\nLesson Overview")
+                        print("\nLogical operators are used to combine or modify conditions in")
+                        print("Python. They help programs make more detailed decisions by")
+                        print("checking whether one or more conditions are true or false.")
+                        print("\nLogical operators are useful when a program needs to check")
+                        print("multiple requirements before allowing a user to perform an action.\n")
+
+                        # END OF LESSON 6 LESSON OVERVIEW
+                        while True:
+                            end_lesson6_overView = input("\nPress Enter back to Lesson choices...")
+                            if end_lesson6_overView == "":
+                                print("+" + "-" * 60 + "+")
+                                print("\n              L O G I C   L A B O R A T O R Y")
+                                print("                     Logical Operators\n")
+                                print(part_of_lesson)
+                                break
+
+                        # LESSON 6 IMPORTANT NOTES
+                    elif lesson6_choice == "2":
+                        print("+" + "-" * 60 + "+")
+                        print("\n                     Logical Operators")
+                        print("\nImportant Notes")
+                        print("\nPython has three main logical operators:")
+                        print("\n1. AND")
+                        print("The and operator returns True only when both conditions are true.")
+                        print("\nExample:")
+                        lesson6_importantNotes1 = '''age = 20
+has_id = True
+
+if age >= 18 and has_id:
+    print("Access granted.")'''
+                        print(lesson6_importantNotes1)
+                        print("Both conditions must be true for access to be granted.")
+                        print("\n2. OR")
+                        print("The or operator returns True when at least one condition is true.")
+                        print("\nExample:")
+                        lesson6_importantNotes2 = '''has_student_id = True
+has_discount_card = False
+
+if has_student_id or has_discount_card:
+    print("Discount available.")'''
+                        print(lesson6_importantNotes2)
+                        print("Only one of the conditions needs to be true.")
+                        print("\n3. NOT")
+                        print("The not operator reverses the truth value of a condition.")
+                        print("\nExample:")
+                        lesson6_importantNotes3 = '''is_raining = False
+
+if not is_raining:
+    print("You can go outside.")'''
+                        print(lesson6_importantNotes3)
+                        print("Since is_raining is False, not is_raining becomes True.")
+                        print("\nLogical Operator Summary")
+                        print("+------------------------------------------------+")
+                        print("| Operator | Meaning                             |")
+                        print("|----------|-------------------------------------|")
+                        print("| and      | Both conditions must be true        |")
+                        print("| or       | At least one condition must be true |")
+                        print("| not      | Reverses the truth value            |")
+                        print("+------------------------------------------------+")
+
+                        # END OF LESSON 6 IMPORTANT NOTES
+                        while True:
+                            end_lesson6_importantNotes = input("\nPress Enter back to Lesson choices...")
+                            if end_lesson6_importantNotes == "":
+                                print("+" + "-" * 60 + "+")
+                                print("\n              L O G I C   L A B O R A T O R Y")
+                                print("                     Logical Operators\n")
+                                print(part_of_lesson)
+                                break
+
+                        # LESSON 6 CODE EXAMPLES
+                    elif lesson6_choice == "3":
+                        print("+" + "-" * 60 + "+")
+                        print("\n                     Logical Operators")
+                        print("\nExample Codes")
+                        print("\nStudent Discount Program")
+                        lesson6_codeExample1 = '''has_student_id = True
+is_student = True
+
+if has_student_id and is_student:
+    print("You are eligible for a student discount.")
+else:
+    print("You are not eligible for a student discount.")'''
+                        print(lesson6_codeExample1)
+                        print("\nExpected Output:")
+                        lesson6_codeExample2 = '''You are eligible for a student discount.'''
+                        print(lesson6_codeExample2)
+                        print("Explanation:")
+                        print("The program checks two conditions:")
+                        print("- The person has a student ID.")
+                        print("- The person is a student.")
+                        print("\nBecause both conditions are True, the program grants the discount.")
+
+                        # END OF LESSON 6 CODE EXAMPLES
+                        while True:
+                            end_lesson6_codeExample = input("\nPress Enter back to Lesson choices...")
+                            if end_lesson6_codeExample == "":
+                                print("+" + "-" * 60 + "+")
+                                print("\n              L O G I C   L A B O R A T O R Y")
+                                print("                     Logical Operators\n")
+                                print(part_of_lesson)
+                                break
+
+                        # LESSON 6 KNOWLEDGE CHECK
+                    elif lesson6_choice == "4":
+                        while True:
+                            print("+" + "-" * 60 + "+")
+                            print("\n                     Logical Operators")
+                            print("\nKnowledge Check")
+                            print("\n1. Which logical operator requires both conditions to be true?")
+                            print("A. or")
+                            print("B. not")
+                            print("C. and")
+
+                            lesson6_answer1 = input("\nYour answer: ").upper()
+
+                            print("\n2. Which operator returns True when at least one condition is true?")
+                            print("A. and")
+                            print("B. or")
+                            print("C. not")
+
+                            lesson6_answer2 = input("\nYour answer: ").upper()
+
+                            print("\n3. What does the not operator do?")
+                            print("A. Combines two conditions")
+                            print("B. Repeats a statement")
+                            print("C. Reverses a condition's truth value")
+
+                            lesson6_answer3 = input("\nYour answer: ").upper()
+
+                            # LESSON 6 KNOWLEDGE CHECK RESULTS
+                            print("\n" + "=" * 60)
+                            print("              KNOWLEDGE CHECK RESULTS")
+                            print("=" * 60)
+
+                            # LESSON 6 SCORE
+                            lesson6_score = 0
+
+                            if lesson6_answer1 == "C":
+                                lesson6_score += 1
+
+                            if lesson6_answer2 == "B":
+                                lesson6_score += 1
+
+                            if lesson6_answer3 == "C":
+                                lesson6_score += 1
+
+                            print("\nYour Score:", lesson6_score, "/ 3")
+
+                            if lesson6_score >= 2:
+                                lesson6_completed = True
+                                print("\nLesson 6 Completed!")
+                                print("You have shown a good understanding of this lesson.")
+                            else:
+                                print("\nLesson 6 Not Yet Completed.")
+                                print("Please review the lesson and try again.")
+
+                            print("\nPress 1 to retry knowledge check...")
+                            print("Press ENTER back to lesson choices...")
+
+                            # RETRY LESSON 6 KNOWLEDGE CHECK
+                            while True:
+                                knowledgeCheck6_retry = input("\nEnter your choice: ")
+                                if knowledgeCheck6_retry == "1":
+                                    break
+                                elif knowledgeCheck6_retry == "":
+                                    print("+" + "-" * 60 + "+")
+                                    print("\n              L O G I C   L A B O R A T O R Y")
+                                    print("                     Logical Operators\n")
+                                    print(part_of_lesson)
+                                    break
+                                else:
+                                    print("Please enter a valid choice.")
+
+                            # END OF LESSON 6 KNOWLEDGE CHECK
+                            if knowledgeCheck6_retry == "1":
+                                continue
+                            else:
+                                break
+
+                    # LESSON 6 BACK TO LESSON CHOICES
+                    elif lesson6_choice == "5":
+                        print(table_of_content)
+                        break
+                    else:
+                        print("Please enter a valid choice.")
+
+            #LESSON 7
+            elif room_choice == "7":
+                print("+" + "-" * 60 + "+")
+                print("\n             R E P E T I T I O N   C H A M B E R")
+                print("                    Iteration and Loops\n")
+                print(part_of_lesson)
+                while True:
+                    lesson7_choice = input("\nEnter your choice: ")
+
+                    # LESSON 7 OVERVIEW
+                    if lesson7_choice == "1":
+                        print("+" + "-" * 60 + "+")
+                        print("\n                    Iteration and Loops")
+                        print("\nLesson Overview")
+                        print("Iteration is the process of repeating a set of instructions. In Python,")
+                        print("loops allow programmers to execute the same code multiple times")
+                        print("without writing the same instructions repeatedly.")
+                        print("\nLoops are useful for counting numbers, displaying repeated")
+                        print("messages, asking for repeated user input, and performing tasks until")
+                        print("a condition is met.\n")
+
+                        # END OF LESSON 7 OVERVIEW
+                        while True:
+                            end_lesson7_overView = input("\nPress Enter back to Lesson choices...")
+                            if end_lesson7_overView == "":
+                                print("+" + "-" * 60 + "+")
+                                print("\n             R E P E T I T I O N   C H A M B E R")
+                                print("                    Iteration and Loops\n")
+                                print(part_of_lesson)
+                                break
+
+                        # LESSON 7 IMPORTANT NOTES
+                    elif lesson7_choice == "2":
+                        print("+" + "-" * 60 + "+")
+                        print("\n                    Iteration and Loops")
+                        print("\nImportant Notes")
+                        print("\nPython has two commonly used loops:")
+                        print("\n1. for Loop")
+                        print("A for loop repeats instructions for a known number of times or")
+                        print("through a sequence of values.")
+                        print("\nExample:")
+                        lesson7_importantNotes1 = '''for number in range(1, 4):
+    print(number)'''
+                        print(lesson7_importantNotes1)
+                        print("\nOutput:")
+                        lesson7_importantNotes2 = '''1
+2
+3'''
+                        print(lesson7_importantNotes2)
+                        print("\nThe range(1, 4) produces the numbers 1, 2, and 3.")
+                        print("\n2. while Loop")
+                        print("A while loop repeats instructions as long as its condition remains true.")
+                        print("\nExample:")
+                        lesson7_importantNotes3 = '''count = 1
+
+while count <= 3:
+    print(count)
+    count = count + 1'''
+                        print(lesson7_importantNotes3)
+                        print("\nOutput:")
+                        print(lesson7_importantNotes2)
+                        print("\nThe loop stops when count becomes greater than 3.")
+                        print("\n3. Important Loop Reminders")
+                        print("- A for loop is useful when you know how many times you want to repeat something.")
+                        print("- A while loop is useful when repetition depends on a condition.")
+                        print("- Always check the condition in a while loop.")
+                        print("- Update the variable when necessary to avoid an infinite loop.")
+                        print("\n4. Infinite Loop")
+                        print("An infinite loop happens when a loop continues without stopping")
+                        print("because its condition never becomes false.\n")
+
+                        # END OF LESSON 7 IMPORTANT NOTES
+                        while True:
+                            end_lesson7_importantNotes = input("\nPress Enter back to Lesson choices...")
+                            if end_lesson7_importantNotes == "":
+                                print("+" + "-" * 60 + "+")
+                                print("\n             R E P E T I T I O N   C H A M B E R")
+                                print("                    Iteration and Loops\n")
+                                print(part_of_lesson)
+                                break
+
+                        # LESSON 7 CODE EXAMPLES
+                    elif lesson7_choice == "3":
+                        print("+" + "-" * 60 + "+")
+                        print("\n                    Iteration and Loops")
+                        print("\nExample Codes")
+                        print("\nRepeating a Welcome Message\n")
+                        lesson7_codeExample1 = '''for number in range(1, 4):
+    print("Welcome to Python Lab!")'''
+                        print(lesson7_codeExample1)
+                        print("\nExpected Output:")
+                        lesson7_codeExample2 = '''Welcome to Python Lab!
+Welcome to Python Lab!
+Welcome to Python Lab!'''
+                        print(lesson7_codeExample2)
+                        print("\nExplanation:")
+                        print("The for loop repeats the print() statement three times.\n")
+
+                        # END OF LESSON 7 CODE EXAMPLES
+                        while True:
+                            end_lesson7_codeExample = input("\nPress Enter back to Lesson choices...")
+                            if end_lesson7_codeExample == "":
+                                print("+" + "-" * 60 + "+")
+                                print("\n             R E P E T I T I O N   C H A M B E R")
+                                print("                    Iteration and Loops\n")
+                                print(part_of_lesson)
+                                break
+
+                        # LESSON 7 KNOWLEDGE CHECK
+                    elif lesson7_choice == "4":
+                        while True:
+                            print("+" + "-" * 60 + "+")
+                            print("\n                    Iteration and Loops")
+                            print("\nKnowledge Check")
+                            print("\n1. What is the purpose of a loop?")
+                            print("A. To stop a program ")
+                            print("B. To repeat instructions")
+                            print("C. To delete information")
+
+                            lesson7_answer1 = input("\nYour answer: ").upper()
+
+                            print("\n2. Which loop is commonly used when the number of repetitions is")
+                            print("known?")
+                            print("A. if loop")
+                            print("B. while loop")
+                            print("C. for loop")
+
+                            lesson7_answer2 = input("\nYour answer: ").upper()
+
+                            print("\n3. What happens when a while loop condition remains True and")
+                            print("never changes?")
+                            print("A. The program automatically stops.")
+                            print("B. The loop may continue indefinitely.")
+                            print("C. The program deletes the variable.")
+
+                            lesson7_answer3 = input("\nYour answer: ").upper()
+
+                            # LESSON 7 KNOWLEDGE CHECK RESULTS
+                            print("\n" + "=" * 60)
+                            print("              KNOWLEDGE CHECK RESULTS")
+                            print("=" * 60)
+
+                            # LESSON 7 SCORE
+                            lesson7_score = 0
+
+                            if lesson7_answer1 == "B":
+                                lesson7_score += 1
+
+                            if lesson7_answer2 == "C":
+                                lesson7_score += 1
+
+                            if lesson7_answer3 == "B":
+                                lesson7_score += 1
+
+                            print("\nYour Score:", lesson7_score, "/ 3")
+
+                            if lesson7_score >= 2:
+                                lesson7_completed = True
+                                print("\nLesson 7 Completed!")
+                                print("You have shown a good understanding of this lesson.")
+                            else:
+                                print("\nLesson 7 Not Yet Completed.")
+                                print("Please review the lesson and try again.")
+
+                            print("\nPress 1 to retry knowledge check...")
+                            print("Press ENTER back to lesson choices...")
+
+                            # RETRY LESSON 7 KNOWLEDGE CHECK
+                            while True:
+                                knowledgeCheck7_retry = input("\nEnter your choice: ")
+                                if knowledgeCheck7_retry == "1":
+                                    break
+                                elif knowledgeCheck7_retry == "":
+                                    print("+" + "-" * 60 + "+")
+                                    print("\n             R E P E T I T I O N   C H A M B E R")
+                                    print("                    Iteration and Loops\n")
+                                    print(part_of_lesson)
+                                    break
+                                else:
+                                    print("Please enter a valid choice...")
+
+                            # END OF LESSON 7 KNOWLEDGE CHECK
+                            if knowledgeCheck7_retry == "1":
+                                continue
+                            else:
+                                break
+
+                    # LESSON 7 BACK TO LESSON CHOICES
+                    elif lesson7_choice == "5":
+                        print(table_of_content)
+                        break
+                    else:
+                        print("Please enter a valid choice.")
+
+            #CHOICE 8 CONDITION TO RETURN TO DASHBOARD
+            elif room_choice == "8":
+                print("+" + "-" * 60 + "+")
+                print("\n                   S T U D E N T   D A S H B O A R D")
+                print(f"\nStudent: {student_name}\n")
+                print(student_dashboard)
+                break
+            else:
+                print("Please enter a valid choice.")
+
+    #HELP CENTER
+    elif dashboard_choice == "2":
+        helpCenter = '''                        HELP CENTER
+             Review basic programming concepts.\n'''
+        print("+" + "-" * 60 + "+")
+        print(helpCenter)
+        helpCenter_description = '''Each lesson has a new set of questions to answer for better 
+                understanding of the lessons.\n
+                choose a lesson to review\n'''
+        print(helpCenter_description)
+        helpCenter_choices = '''        [1] Introduction to Programming\n
+        [2] Python Basic Syntax\n
+        [3] Arithmetic Operators and Expressions\n
+        [4] Basic Input and Output.\n
+        [5] Conditional Statements\n
+        [6] Logical Operators\n
+        [7] Iteration and Loops\n
+        [8] BACK TO STUDENT DASHBOARD\n'''
+        print(helpCenter_choices)
+
+        while True:
+            helpCenter_choice = input("\nEnter your choice: ")
+
+            # LESSON 1 REVIEW
+            if helpCenter_choice == "1":
+                while True:
+                    lesson1review_score = 0
+                    lesson1_reviewQuestion = '''\n1. Which of the following is a programming language mentioned in the lesson?
+A. Java
+B. Google Chrome
+C. Windows
+\n2. What type of programming language is Python?
+A. Machine-level language
+B. Computer hardware language
+C. High-level programming language
+\n3. Which activity can be done using Python?
+A. Repairing a computer monitor
+B. Developing websites
+C. Manufacturing keyboards'''
+                    print("+" + "-" * 60 + "+")
+                    print("\n                      R E V I E W")
+                    print("\n               Introduction to Programming")
+                    print(lesson1_reviewQuestion)
+                    lesson1review_answer1 = input("\nAnswer in No. 1: ").upper()
+                    lesson1review_answer2 = input("\nAnswer in No. 2: ").upper()
+                    lesson1review_answer3 = input("\nAnswer in No. 3: ").upper()
+
+                    if lesson1review_answer1 == "A":
+                        lesson1review_score += 1
+                    if lesson1review_answer2 == "C":
+                            lesson1review_score += 1
+                    if lesson1review_answer3 == "B":
+                        lesson1review_score += 1
+
+                    print(f"\nYour score {lesson1review_score} / 3")
+
+                    lesson1_review_attempted = True
+
+                    if lesson1review_score >= 2:
+                        lesson1_review_completed = True
+                        lesson1_review_needed = False
+                        print("\nYou passed Lesson 1 review! You understood the lesson.")
+                    else:
+                        print('\nPlease review Lesson 1 again and retry Lesson 1 Reviewer')
+                        lesson1_review_completed = False
+                        lesson1_review_needed = True
+
+
+                    print("\nPress 1 to retry Lesson 1 Review")
+                    print("Press ENTER to exit Lesson 1 Review")
+
+                    #RETRY LESSON 1 REVIEW
+                    while True:
+                        retry_lesson1review = input("\nEnter your choice: ")
+                        if retry_lesson1review == "1":
+                            break
+                        elif retry_lesson1review == "":
+                            print(helpCenter)
+                            print(helpCenter_choices)
+                            break
+                        else:
+                            print("Please enter a valid choice...")
+
+                    #END OF LESSON 1 REVIEW
+                    if retry_lesson1review == "1":
+                        continue
+                    else:
+                        break
+
+
+
+            #LESSON 2 REVIEW
+            elif helpCenter_choice == "2":
+                lesson2_reviewQuestion = '''\n1. What happens when you create these two variables?\n
+name = "Alex"Name = "John"\n
+A. They have the same value.
+B. Python treats them as two different variables.
+C. Python automatically combines them.
+\n2. What does indentation refer to in Python?
+A. Spaces at the beginning of a line
+B. Quotation marks around a string
+C. Symbols used for multiplication
+\n3. Which symbol is used to assign a value to a variable?
+A. #
+B. ==
+C. =
+'''
+
+                while True:
+                    lesson2review_score = 0
+
+                    print("+" + "-" * 60 + "+")
+                    print("\n                      R E V I E W")
+                    print("                   Python Basic Syntax")
+                    print(lesson2_reviewQuestion)
+                    lesson2review_answer1 = input("\nAnswer in No. 1: ").upper()
+                    lesson2review_answer2 = input("\nAnswer in No. 2: ").upper()
+                    lesson2review_answer3 = input("\nAnswer in No. 3: ").upper()
+
+                    if lesson2review_answer1 == "B":
+                        lesson2review_score += 1
+                    if lesson2review_answer2 == "A":
+                        lesson2review_score += 1
+                    if lesson2review_answer3 == "C":
+                        lesson2review_score += 1
+
+                    print(f"\nYour score {lesson2review_score} / 3")
+
+                    lesson2_review_attempted = True
+
+                    if lesson2review_score >= 2:
+                        lesson2_review_completed = True
+                        lesson2_review_needed = False
+                        print("\nYou passed Lesson 2 review! You understood the lesson.")
+                    else:
+                        print('\nPlease review Lesson 2 again and retry Lesson 2 Reviewer')
+                        lesson2_review_completed = True
+                        lesson2_review_needed = False
+
+                    print("\nPress 1 to retry Lesson 2 Review")
+                    print("Press ENTER to exit Lesson 2 Review")
+
+                    # RETRY LESSON 2 REVIEW
+                    while True:
+                        retry_lesson2review = input("\nEnter your choice: ")
+                        if retry_lesson2review == "1":
+                            break
+                        elif retry_lesson2review == "":
+                            print("+" + "-" * 60 + "+")
+                            print(helpCenter)
+                            print(helpCenter_choices)
+                            break
+                        else:
+                            print("Please enter a valid choice...")
+
+                    # END OF LESSON 2 REVIEW
+                    if retry_lesson2review == "1":
+                        continue
+                    else:
+                        break
+
+            #LESSON 3 REVIEW
+            elif helpCenter_choice == "3":
+                lesson3_reviewQuestion = '''\n1. What is the result of `17 // 5`?
+A. 3
+B. 3.4
+C. 2
+\n2. What is the result of `3 ** 2`?
+A. 6
+B. 9
+C. 8
+\n3. What is the result of `7 / 2`?
+A. 3
+B. 4
+C. 3.5'''
+
+                while True:
+                    lesson3review_score = 0
+                    print("+" + "-" * 60 + "+")
+                    print("\n                      R E V I E W")
+                    print("            Arithmetic Operators and Expressions")
+                    print(lesson3_reviewQuestion)
+
+                    lesson3review_answer1 = input("\nAnswer in No. 1: ").upper()
+                    lesson3review_answer2 = input("\nAnswer in No. 2: ").upper()
+                    lesson3review_answer3 = input("\nAnswer in No. 3: ").upper()
+
+                    if lesson3review_answer1 == "A":
+                        lesson3review_score += 1
+                    if lesson3review_answer2 == "B":
+                        lesson3review_score += 1
+                    if lesson3review_answer3 == "C":
+                        lesson3review_score += 1
+
+                    print(f"\nYour score {lesson3review_score} / 3")
+
+                    lesson3_review_attempted = True
+
+                    if lesson3review_score >= 2:
+                        lesson3_review_completed = True
+                        lesson3_review_needed = False
+                        print("\nYou passed Lesson 3 review! You understood the lesson.")
+                    else:
+                        print('\nPlease review Lesson 3 again and retry Lesson 3 Reviewer')
+                        lesson3_review_completed = True
+                        lesson3_review_needed = False
+
+                    print("\nPress 1 to retry Lesson 3 Review")
+                    print("Press ENTER to exit Lesson 3 Review")
+
+                    # RETRY LESSON 3 REVIEW
+                    while True:
+                        retry_lesson3review = input("\nEnter your choice: ")
+                        if retry_lesson3review == "1":
+                            break
+                        elif retry_lesson3review == "":
+                            print("+" + "-" * 60 + "+")
+                            print(helpCenter)
+                            print(helpCenter_choices)
+                            break
+                        else:
+                            print("Please enter a valid choice...")
+
+                    # END OF LESSON 3 REVIEW
+                    if retry_lesson3review == "1":
+                        continue
+                    else:
+                        break
+
+
+            #LESSON 4 REVIEW
+            elif helpCenter_choice == "4":
+                lesson4_reviewQuestion = '''\n1. By default, what type of value does `input()` return, even 
+when the user enters a number?
+A. Integer
+B. String
+C. Float
+\n2. Which function is used to convert user input into a decimal number?
+A. float()
+B. int()
+C. print()
+\n3. Given the following code, what will be displayed?
+name = "Alex"print("Welcome,", name)
+A. Welcome
+B. Welcome, Alex
+C. name'''
+
+                while True:
+                    lesson4review_score = 0
+                    print("+" + "-" * 60 + "+")
+                    print("\n                      R E V I E W")
+                    print("                 Basic Input and Output")
+                    print(lesson4_reviewQuestion)
+
+                    lesson4review_answer1 = input("\nAnswer in No. 1: ").upper()
+                    lesson4review_answer2 = input("\nAnswer in No. 2: ").upper()
+                    lesson4review_answer3 = input("\nAnswer in No. 3: ").upper()
+
+                    if lesson4review_answer1 == "B":
+                        lesson4review_score += 1
+                    if lesson4review_answer2 == "A":
+                        lesson4review_score += 1
+                    if lesson4review_answer3 == "B":
+                        lesson4review_score += 1
+
+                    print(f"\nYour score {lesson4review_score} / 3")
+
+                    lesson4_review_attempted = True
+
+                    if lesson4review_score >= 2:
+                        lesson4_review_completed = True
+                        lesson4_review_needed = False
+                        print("\nYou passed Lesson 4 review! You understood the lesson.")
+                    else:
+                        print('\nPlease review Lesson 4 again and retry Lesson 4 Reviewer')
+                        lesson4_review_completed = True
+                        lesson4_review_needed = False
+
+                    print("\nPress 1 to retry Lesson 4 Review")
+                    print("Press ENTER to exit Lesson 4 Review")
+
+                    # RETRY LESSON 4 REVIEW
+                    while True:
+                        retry_lesson4review = input("\nEnter your choice: ")
+                        if retry_lesson4review == "1":
+                            break
+                        elif retry_lesson4review == "":
+                            print("+" + "-" * 60 + "+")
+                            print(helpCenter)
+                            print(helpCenter_choices)
+                            break
+                        else:
+                            print("Please enter a valid choice...")
+
+                    # END OF LESSON 4 REVIEW
+                    if retry_lesson4review == "1":
+                        continue
+                    else:
+                        break
+
+            #LESSON 5 REVIEW
+            elif helpCenter_choice == "5":
+                lesson5_reviewQuestion = '''\n1. What is the purpose of the `elif` statement?
+A. To repeat instructions
+B. To check additional conditions
+C. To receive information from the user
+\n2. Given `age = 18`, what is the result of the condition `age >= 18`?
+A. False
+B. True
+C. Error
+\n3. What will this program display if the student's score is 70?\n
+score = 70if score >= 90:    print("Excellent")elif score >= 75:    print("Passed")else:    print("Failed")\n
+A. Passed
+B. Excellent
+C. Failed'''
+                while True:
+                    lesson5review_score = 0
+                    print("+" + "-" * 60 + "+")
+                    print("\n                      R E V I E W")
+                    print("                 Conditional Statements")
+                    print(lesson5_reviewQuestion)
+
+                    lesson5review_answer1 = input("\nAnswer in No. 1: ").upper()
+                    lesson5review_answer2 = input("\nAnswer in No. 2: ").upper()
+                    lesson5review_answer3 = input("\nAnswer in No. 3: ").upper()
+
+                    if lesson5review_answer1 == "B":
+                        lesson5review_score += 1
+                    if lesson5review_answer2 == "B":
+                        lesson5review_score += 1
+                    if lesson5review_answer3 == "C":
+                        lesson5review_score += 1
+
+                    print(f"\nYour score {lesson5review_score} / 3")
+
+                    lesson5_review_attempted = True
+
+                    if lesson5review_score >= 2:
+                        lesson5_review_completed = True
+                        lesson5_review_needed = False
+                        print("\nYou passed Lesson 5 review! You understood the lesson.")
+                    else:
+                        print('\nPlease review Lesson 5 again and retry Lesson 5 Reviewer')
+                        lesson5_review_completed = True
+                        lesson5_review_needed = False
+
+                    print("\nPress 1 to retry Lesson 5 Review")
+                    print("Press ENTER to exit Lesson 5 Review")
+
+                    # RETRY LESSON 5 REVIEW
+                    while True:
+                        retry_lesson5review = input("\nEnter your choice: ")
+                        if retry_lesson5review == "1":
+                            break
+                        elif retry_lesson5review == "":
+                            print("+" + "-" * 60 + "+")
+                            print(helpCenter)
+                            print(helpCenter_choices)
+                            break
+                        else:
+                            print("Please enter a valid choice...")
+
+                    # END OF LESSON 5 REVIEW
+                    if retry_lesson5review == "1":
+                        continue
+                    else:
+                        break
+
+
+            #LESSON 6 REVIEW
+            elif helpCenter_choice == "6":
+                lesson6_reviewQuestion = '''\n1. What is the result of this condition?\n
+has_student_id = Trueis_student = Falsehas_student_id and is_student\n
+A. True
+B. False
+C. Both conditions are ignored.
+\n2. What is the result of `False or True`?
+A. True
+B. False
+C. None
+\n3. Given `is_raining = True`, what is the result of `not is_raining`?
+A. True
+B. False
+C. The value stays True.'''
+                while True:
+                    lesson6review_score = 0
+                    print("+" + "-" * 60 + "+")
+                    print("\n                      R E V I E W")
+                    print("                   Logical Operators")
+                    print(lesson6_reviewQuestion)
+
+                    lesson6review_answer1 = input("\nAnswer in No. 1: ").upper()
+                    lesson6review_answer2 = input("\nAnswer in No. 2: ").upper()
+                    lesson6review_answer3 = input("\nAnswer in No. 3: ").upper()
+
+                    if lesson6review_answer1 == "B":
+                        lesson6review_score += 1
+                    if lesson6review_answer2 == "A":
+                        lesson6review_score += 1
+                    if lesson6review_answer3 == "B":
+                        lesson6review_score += 1
+
+                    print(f"\nYour score {lesson6review_score} / 3")
+
+                    lesson6_review_attempted = True
+
+                    if lesson6review_score >= 2:
+                        lesson6_review_completed = True
+                        lesson6_review_needed = False
+                        print("\nYou passed Lesson 6 review! You understood the lesson.")
+                    else:
+                        print('\nPlease review Lesson 6 again and retry Lesson 6 Reviewer')
+                        lesson6_review_completed = True
+                        lesson6_review_needed = False
+
+                    print("\nPress 1 to retry Lesson 6 Review")
+                    print("Press ENTER to exit Lesson 6 Review")
+
+                    # RETRY LESSON 6 REVIEW
+                    while True:
+                        retry_lesson6review = input("\nEnter your choice: ")
+                        if retry_lesson6review == "1":
+                            break
+                        elif retry_lesson6review == "":
+                            print("+" + "-" * 60 + "+")
+                            print(helpCenter)
+                            print(helpCenter_choices)
+                            break
+                        else:
+                            print("Please enter a valid choice...")
+
+                    # END OF LESSON 6 REVIEW
+                    if retry_lesson6review == "1":
+                        continue
+                    else:
+                        break
+
+
+            #LESSON 7 REVIEW
+            elif helpCenter_choice == "7":
+                lesson7_reviewQuestion = '''\n1. What numbers are produced by `range(1, 4)`?
+A. 1, 2, 3, 4
+B. 1, 2, 3
+C. 0, 1, 2, 3
+\n2. Consider the following code. When will the loop stop?\n
+count = 1while count <= 3:    print(count)    count = count + 1\n
+A. When count becomes 2
+B. When count becomes 3
+C. When count becomes 4
+\n3. Which statement increases the value of `count` by 1?
+A. `count = count + 1`
+B. `print(count)`
+C. `count = 1`'''
+                while True:
+                    lesson7review_score = 0
+                    print("+" + "-" * 60 + "+")
+                    print("\n                      R E V I E W")
+                    print("                   Iteration and Loops")
+                    print(lesson7_reviewQuestion)
+
+                    lesson7review_answer1 = input("\nAnswer in No. 1: ").upper()
+                    lesson7review_answer2 = input("\nAnswer in No. 2: ").upper()
+                    lesson7review_answer3 = input("\nAnswer in No. 3: ").upper()
+
+                    if lesson7review_answer1 == "B":
+                        lesson7review_score += 1
+                    if lesson7review_answer2 == "C":
+                        lesson7review_score += 1
+                    if lesson7review_answer3 == "A":
+                        lesson7review_score += 1
+
+                    print(f"\nYour score {lesson7review_score} / 3")
+
+                    lesson7_review_attempted = True
+
+                    if lesson7review_score >= 2:
+                        lesson7_review_completed = True
+                        lesson7_review_needed = False
+                        print("\nYou passed Lesson 7 review! You understood the lesson.")
+                    else:
+                        print('\nPlease review Lesson 7 again and retry Lesson 7 Reviewer')
+                        lesson7_review_completed = True
+                        lesson7_review_needed = False
+
+                    print("\nPress 1 to retry Lesson 7 Review")
+                    print("Press ENTER to exit Lesson 7 Review")
+
+                    # RETRY LESSON 7 REVIEW
+                    while True:
+                        retry_lesson7review = input("\nEnter your choice: ")
+                        if retry_lesson7review == "1":
+                            break
+                        elif retry_lesson7review == "":
+                            print("+" + "-" * 60 + "+")
+                            print(helpCenter)
+                            print(helpCenter_choices)
+                            break
+                        else:
+                            print("Please enter a valid choice...")
+
+                    # END OF LESSON 7 REVIEW
+                    if retry_lesson7review == "1":
+                        continue
+                    else:
+                        break
+
+
+            #EXIT HELP CENTER
+            elif helpCenter_choice == "8":
+                print("+" + "-" * 60 + "+")
+                print("\n                   S T U D E N T   D A S H B O A R D")
+                print(f"\nStudent: {student_name}\n")
+                print(student_dashboard)
+                break
+            else:
+                print("Please enter a valid choice.")
+
+    # PROGRAMMER'S JOURNAL
+    elif dashboard_choice == "3":
+
+        while True:
+
+            print("+" + "-" * 60 + "+")
+            print("              PROGRAMMER'S JOURNAL")
+            print("+" + "-" * 60 + "+")
+
+            print("\n[1] Write a Journal Entry")
+            print("[2] View My Journal")
+            print("[3] Back to Dashboard")
+
+            journal_choice = input("\nEnter your choice: ")
+
+            # WRITE JOURNAL
+            if journal_choice == "1":
+
+                while True:
+                    print("\nWhich lesson did you study?")
+                    journal_lesson = input("Enter lesson number (1-7): ")
+
+                    if journal_lesson.isdigit():
+
+                        journal_lesson = int(journal_lesson)
+
+                        if 1 <= journal_lesson <= 7:
+
+                            learned = input("\nWhat did you learn today? ")
+                            difficult = input("\nWhat part was difficult? ")
+                            practice = input("\nWhat do you want to practice more? ")
+
+                            journal_entries += f"""
+
+                \nLESSON {journal_lesson}
+                What I learned: {learned}
+                What was difficult: {difficult}
+                What I want to practice: {practice}
+                \n----------------------------------------
+                """
+
+                            print("\nYour journal entry has been saved!")
+                            break
+
+                        else:
+                            print("\nPlease enter a lesson number from 1 to 7.")
+
+                    else:
+                        print("\nPlease enter numbers only.")
+
+            # VIEW JOURNAL
+            elif journal_choice == "2":
+
+                print("+" + "-" * 60 + "+")
+                print("              MY LEARNING JOURNAL")
+                print("+" + "-" * 60 + "+")
+
+                if journal_entries.strip() == "":
+                    print("\nYou have not written any journal entries yet.")
+                else:
+                    print(journal_entries)
+
+                input("\nPress ENTER to return to the Journal menu...")
+
+            # BACK TO DASHBOARD
+            elif journal_choice == "3":
+
+                print("+" + "-" * 60 + "+")
+                print("              STUDENT DASHBOARD")
+                print(f"\nStudent: {student_name}\n")
+                print(student_dashboard)
+                break
+
+            else:
+                print("\nInvalid choice! Please try again.")
+    elif dashboard_choice == "4":
+
+        while True:
+            print("+" + "-" * 60 + "+")
+            print("                      PROJECT WORKSHOP")
+            print("+" + "-" * 60 + "+")
+
+            print("\nPROJECT 1: STUDENT GRADE CHECKER")
+            print("\nCreate your own Student Grade Checker in PyCharm.")
+            print("Use the following test scores:")
+            print("Score 1: 80")
+            print("Score 2: 70")
+            print("Score 3: 90")
+            print("Identify the student's average score and if they passed or failed the test.")
+            print("Passing score is 75")
+
+            print("\nAfter running your project, enter the results")
+            print("displayed by your own program.")
+
+            student_average = input("\nEnter the average: ").strip()
+            student_result = input("Enter the final result: ").strip().lower()
+
+            if (student_average == "80" or student_average == "80.0") and student_result == "passed":
+
+                project_completed = True
+
+                print("+" + "-" * 60 + "+")
+                print("          PROJECT SUCCESSFULLY COMPLETED!")
+                print("+" + "-" * 60 + "+")
+                print("Your submitted results are correct!")
+                print("You have demonstrated your programming skills.")
+
+            else:
+                print("\nYour submitted results do not match the expected output.")
+                print("Review your calculations and conditional statements.")
+                print("You can revise your project and try again.")
+
+            input("\nPress ENTER to return to Student Dashboard...")
+
+            print("+" + "-" * 60 + "+")
+            print("\n                   S T U D E N T   D A S H B O A R D")
+            print(f"\nStudent: {student_name}\n")
+            print(student_dashboard)
+            break
+
+    #STUDENT PROGRESS
+    elif dashboard_choice == "5":
+
+        #LESSONS COMPLETED
+        completed_count = 0
+
+        if lesson1_completed:
+            completed_count += 1
+
+        if lesson2_completed:
+            completed_count += 1
+
+        if lesson3_completed:
+            completed_count += 1
+
+        if lesson4_completed:
+            completed_count += 1
+
+        if lesson5_completed:
+            completed_count += 1
+
+        if lesson6_completed:
+            completed_count += 1
+
+        if lesson7_completed:
+            completed_count += 1
+
+        progress_percent = int(completed_count / 7 * 100)
+
+        #REVIEW COMPLETED
+        review_completed_count = 0
+
+        if lesson1_review_completed:
+            review_completed_count += 1
+
+        if lesson2_review_completed:
+            review_completed_count += 1
+
+        if lesson3_review_completed:
+            review_completed_count += 1
+
+        if lesson4_review_completed:
+            review_completed_count += 1
+
+        if lesson5_review_completed:
+            review_completed_count += 1
+
+        if lesson6_review_completed:
+            review_completed_count += 1
+
+        if lesson7_review_completed:
+            review_completed_count += 1
+
+        review_progress_percent = int(review_completed_count / 7 * 100)
+
+        review_progress_bar = "[" + "#" * review_completed_count + "-" * (7 - review_completed_count) + "]"
+
+
+
+        progress_bar = "[" + "#" * completed_count + "-" * (7 - completed_count) + "]"
+        print("+" + "-" * 60 + "+")
+        print("\n               S T U D E N T   P R O G R E S S")
+        print("\nLessons Completed:", completed_count, "/ 7")
+        print("Progress:", progress_percent, "%")
+        print(progress_bar)
+
+        #LESSON COMPLETION STATUS
+        print("\n             LESSON COMPLETION STATUS")
+
+        if lesson1_completed:
+            print("Lesson 1: COMPLETED")
+        else:
+            print("Lesson 1: NOT YET COMPLETED - Please review Lesson 1.")
+
+        if lesson2_completed:
+            print("Lesson 2: COMPLETED")
+        else:
+            print("Lesson 2: NOT YET COMPLETED - Please review Lesson 2.")
+
+        if lesson3_completed:
+            print("Lesson 3: COMPLETED")
+        else:
+            print("Lesson 3: NOT YET COMPLETED - Please review Lesson 3.")
+
+        if lesson4_completed:
+            print("Lesson 4: COMPLETED")
+        else:
+            print("Lesson 4: NOT YET COMPLETED - Please review Lesson 4.")
+
+        if lesson5_completed:
+            print("Lesson 5: COMPLETED")
+        else:
+            print("Lesson 5: NOT YET COMPLETED - Please review Lesson 5.")
+
+        if lesson6_completed:
+            print("Lesson 6: COMPLETED")
+        else:
+            print("Lesson 6: NOT YET COMPLETED - Please review Lesson 6.")
+
+        if lesson7_completed:
+            print("Lesson 7: COMPLETED")
+        else:
+            print("Lesson 7: NOT YET COMPLETED - Please review Lesson 7.")
+
+        # LESSON COMPLETION STATUS
+        print("\n             REVIEW COMPLETION STATUS")
+
+        print("\nReview Lessons Completed:", review_completed_count, "/ 7")
+        print("Progress:", review_progress_percent, "%")
+        print(review_progress_bar)
+
+        if not lesson1_review_attempted:
+            print("Lesson 1: Review Not Taken")
+        elif lesson1_review_needed:
+            print("Lesson 1: REVIEW NEEDED")
+        else:
+            print("Lesson 1: Review Passed")
+
+        if not lesson2_review_attempted:
+            print("Lesson 2: Review Not Taken")
+        elif lesson2_review_needed:
+            print("Lesson 2: REVIEW NEEDED")
+        else:
+            print("Lesson 2: Review Passed")
+
+        if not lesson3_review_attempted:
+            print("Lesson 3: Review Not Taken")
+        elif lesson3_review_needed:
+            print("Lesson 3: REVIEW NEEDED")
+        else:
+            print("Lesson 3: Review Passed")
+
+        if not lesson4_review_attempted:
+            print("Lesson 4: Review Not Taken")
+        elif lesson4_review_needed:
+            print("Lesson 4: REVIEW NEEDED")
+        else:
+            print("Lesson 4: Review Passed")
+
+        if not lesson5_review_attempted:
+            print("Lesson 5: Review Not Taken")
+        elif lesson5_review_needed:
+            print("Lesson 5: REVIEW NEEDED")
+        else:
+            print("Lesson 5: Review Passed")
+
+        if not lesson6_review_attempted:
+            print("Lesson 6: Review Not Taken")
+        elif lesson6_review_needed:
+            print("Lesson 6: REVIEW NEEDED")
+        else:
+            print("Lesson 6: Review Passed")
+
+
+        if not lesson7_review_attempted:
+            print("Lesson 7: Review Not Taken")
+        elif lesson7_review_needed:
+            print("Lesson 7: REVIEW NEEDED")
+        else:
+            print("Lesson 7: Review Passed")
+
+        # PROJECT WORKSHOP COMPLETION STATUS
+        print("\n          PROJECT WORKSHOP COMPLETION STATUS")
+
+        if project_completed:
+            print("Project Completed")
+        else:
+            print("Project NOT COMPLETED")
+
+        while True:
+            exit_studentProgress = input("\nPress ENTER back to Student Dashboard")
+            if exit_studentProgress == "":
+                print("+" + "-" * 60 + "+")
+                print("\n                   S T U D E N T   D A S H B O A R D")
+                print(f"\nStudent: {student_name}\n")
+                print(student_dashboard)
+                break
+
+    elif dashboard_choice == "6":
+        print("+" + "-" * 60 + "+")
+        exit_message = '''\nThank you for using Python Academy!
+
+Keep practicing, stay curious, and never stop learning. 
+Every line of code brings you one step closer to becoming 
+a better programmer.
+
+See you next time. Happy coding!\n'''
+        print(exit_message)
+        print("+" + "-" * 60 + "+")
+        exit()
+
+    else:
+        print("Please enter a valid choice.")
