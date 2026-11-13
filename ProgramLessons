@@ -1637,7 +1637,7 @@ B. Quotation marks around a string
 C. Symbols used for multiplication'''
 
                     print(lesson2_reviewQuestion2)
-                    lesson2review_answer2 = input("\nAnswer in No. 1: ").upper()
+                    lesson2review_answer2 = input("\nAnswer in No. 2: ").upper()
 
                     # HINT LESSON 2 REVIEW QUESTION 2
 
@@ -1647,7 +1647,7 @@ B. ==
 C. ='''
 
                     print(lesson2_reviewQuestion3)
-                    lesson2review_answer3 = input("\nAnswer in No. 1: ").upper()
+                    lesson2review_answer3 = input("\nAnswer in No. 3: ").upper()
 
                     # HINT LESSON 2 REVIEW QUESTION 3
 
@@ -1695,29 +1695,35 @@ C. ='''
 
             #LESSON 3 REVIEW
             elif helpCenter_choice == "3":
-                lesson3_reviewQuestion = '''\n1. What is the result of `17 // 5`?
-A. 3
-B. 3.4
-C. 2
-\n2. What is the result of `3 ** 2`?
-A. 6
-B. 9
-C. 8
-\n3. What is the result of `7 / 2`?
-A. 3
-B. 4
-C. 3.5'''
-
                 while True:
                     lesson3review_score = 0
                     print("+" + "-" * 60 + "+")
                     print("\n                      R E V I E W")
                     print("            Arithmetic Operators and Expressions")
-                    print(lesson3_reviewQuestion)
-
+                    lesson3_reviewQuestion1 = '''\n1. What is the result of `17 // 5`?
+A. 3
+B. 3.4
+C. 2'''
                     lesson3review_answer1 = input("\nAnswer in No. 1: ").upper()
+
+                    # HINT LESSON 3 REVIEW QUESTION 3
+
+                    lesson3_reviewQuestion2 = '''\n2. What is the result of `3 ** 2`?
+A. 6
+B. 9
+C. 8'''
                     lesson3review_answer2 = input("\nAnswer in No. 2: ").upper()
+
+                    # HINT LESSON 3 REVIEW QUESTION 3
+
+                    lesson3_reviewQuestion3 = '''\n3. What is the result of `7 / 2`?
+A. 3
+B. 4
+C. 3.5'''
                     lesson3review_answer3 = input("\nAnswer in No. 3: ").upper()
+
+                    # HINT LESSON 3 REVIEW QUESTION 3
+
 
                     if lesson3review_answer1 == "A":
                         lesson3review_score += 1
@@ -1764,31 +1770,37 @@ C. 3.5'''
 
             #LESSON 4 REVIEW
             elif helpCenter_choice == "4":
-                lesson4_reviewQuestion = '''\n1. By default, what type of value does `input()` return, even 
-when the user enters a number?
-A. Integer
-B. String
-C. Float
-\n2. Which function is used to convert user input into a decimal number?
-A. float()
-B. int()
-C. print()
-\n3. Given the following code, what will be displayed?
-name = "Alex"print("Welcome,", name)
-A. Welcome
-B. Welcome, Alex
-C. name'''
-
                 while True:
                     lesson4review_score = 0
                     print("+" + "-" * 60 + "+")
                     print("\n                      R E V I E W")
                     print("                 Basic Input and Output")
-                    print(lesson4_reviewQuestion)
 
+                    lesson4_reviewQuestion1 = '''\n1. By default, what type of value does `input()` return, even 
+when the user enters a number?
+A. Integer
+B. String
+C. Float'''
                     lesson4review_answer1 = input("\nAnswer in No. 1: ").upper()
+
+                    # HINT LESSON 4 REVIEW QUESTION 1
+
+                    lesson4_reviewQuestion2 = '''\n2. Which function is used to convert user input into a decimal number?
+A. float()
+B. int()
+C. print()'''
                     lesson4review_answer2 = input("\nAnswer in No. 2: ").upper()
+
+                    # HINT LESSON 4 REVIEW QUESTION 2
+
+                    lesson4_reviewQuestion3 = '''\n3. Given the following code, what will be displayed?
+name = "Alex"print("Welcome,", name)
+A. Welcome
+B. Welcome, Alex
+C. name'''
                     lesson4review_answer3 = input("\nAnswer in No. 3: ").upper()
+
+                    # HINT LESSON 4 REVIEW QUESTION 3
 
                     if lesson4review_answer1 == "B":
                         lesson4review_score += 1
