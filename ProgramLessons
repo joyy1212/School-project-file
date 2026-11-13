@@ -1534,25 +1534,38 @@ Welcome to Python Lab!'''
             if helpCenter_choice == "1":
                 while True:
                     lesson1review_score = 0
-                    lesson1_reviewQuestion = '''\n1. Which of the following is a programming language mentioned in the lesson?
-A. Java
-B. Google Chrome
-C. Windows
-\n2. What type of programming language is Python?
-A. Machine-level language
-B. Computer hardware language
-C. High-level programming language
-\n3. Which activity can be done using Python?
-A. Repairing a computer monitor
-B. Developing websites
-C. Manufacturing keyboards'''
+
                     print("+" + "-" * 60 + "+")
                     print("\n                      R E V I E W")
                     print("\n               Introduction to Programming")
-                    print(lesson1_reviewQuestion)
+
+                    lesson1_reviewQuestion1 = '''\n1. Which of the following is a programming language mentioned in the lesson?
+A. Java
+B. Google Chrome
+C. Windows'''
+                    print(lesson1_reviewQuestion1)
                     lesson1review_answer1 = input("\nAnswer in No. 1: ").upper()
+
+                    #HINT LESSON 1 REVIEW QUESTION 1
+
+                    lesson1_reviewQuestion2 = '''\n2. What type of programming language is Python?
+A. Machine-level language
+B. Computer hardware language
+C. High-level programming language'''
+                    print(lesson1_reviewQuestion2)
                     lesson1review_answer2 = input("\nAnswer in No. 2: ").upper()
+
+                    # HINT LESSON 1 REVIEW QUESTION 2
+
+                    lesson1_reviewQuestion3 = '''\n3. Which activity can be done using Python?
+A. Repairing a computer monitor
+B. Developing websites
+C. Manufacturing keyboards'''
+                    print(lesson1_reviewQuestion3)
                     lesson1review_answer3 = input("\nAnswer in No. 3: ").upper()
+
+                    # HINT LESSON 1 REVIEW QUESTION 2
+
 
                     if lesson1review_answer1 == "A":
                         lesson1review_score += 1
@@ -1600,31 +1613,43 @@ C. Manufacturing keyboards'''
 
             #LESSON 2 REVIEW
             elif helpCenter_choice == "2":
-                lesson2_reviewQuestion = '''\n1. What happens when you create these two variables?\n
-name = "Alex"Name = "John"\n
-A. They have the same value.
-B. Python treats them as two different variables.
-C. Python automatically combines them.
-\n2. What does indentation refer to in Python?
-A. Spaces at the beginning of a line
-B. Quotation marks around a string
-C. Symbols used for multiplication
-\n3. Which symbol is used to assign a value to a variable?
-A. #
-B. ==
-C. =
-'''
-
                 while True:
                     lesson2review_score = 0
 
                     print("+" + "-" * 60 + "+")
                     print("\n                      R E V I E W")
                     print("                   Python Basic Syntax")
-                    print(lesson2_reviewQuestion)
+
+                    lesson2_reviewQuestion1 = '''\n1. What happens when you create these two variables?\n
+name = "Alex"Name = "John"\n
+A. They have the same value.
+B. Python treats them as two different variables.
+C. Python automatically combines them.'''
+
+                    print(lesson2_reviewQuestion1)
                     lesson2review_answer1 = input("\nAnswer in No. 1: ").upper()
-                    lesson2review_answer2 = input("\nAnswer in No. 2: ").upper()
-                    lesson2review_answer3 = input("\nAnswer in No. 3: ").upper()
+
+                    # HINT LESSON 2 REVIEW QUESTION 1
+
+                    lesson2_reviewQuestion2 = '''\n2. What does indentation refer to in Python?
+A. Spaces at the beginning of a line
+B. Quotation marks around a string
+C. Symbols used for multiplication'''
+
+                    print(lesson2_reviewQuestion2)
+                    lesson2review_answer2 = input("\nAnswer in No. 1: ").upper()
+
+                    # HINT LESSON 2 REVIEW QUESTION 2
+
+                    lesson2_reviewQuestion3 = '''\n3. Which symbol is used to assign a value to a variable?
+A. #
+B. ==
+C. ='''
+
+                    print(lesson2_reviewQuestion3)
+                    lesson2review_answer3 = input("\nAnswer in No. 1: ").upper()
+
+                    # HINT LESSON 2 REVIEW QUESTION 3
 
                     if lesson2review_answer1 == "B":
                         lesson2review_score += 1
