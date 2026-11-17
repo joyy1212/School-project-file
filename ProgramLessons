@@ -1829,7 +1829,8 @@ C. Manufacturing keyboards'''
 
                     #QUESTION 1
                     lesson2_reviewQuestion1 = '''\n1. What happens when you create these two variables?\n
-name = "Alex"Name = "John"\n
+name = "Alex"
+Name = "John"\n
 A. They have the same value.
 B. Python treats them as two different variables.
 C. Python automatically combines them.'''
@@ -1849,7 +1850,7 @@ C. Python automatically combines them.'''
                             print("\nInvalid answer! Please choose A, B, or C.")
                             continue
 
-                        if lesson2review_answer1 == "A":
+                        if lesson2review_answer1 == "B":
                             lesson2review_score += 1
                             print("\nCorrect! Well done!")
                             break
@@ -2201,7 +2202,8 @@ C. print()'''
 
                     # QUESTION 3
                     lesson4_reviewQuestion3 = '''\n3. Given the following code, what will be displayed?
-name = "Alex"print("Welcome,", name)
+name = "Alex"
+print("Welcome,", name)
 A. Welcome
 B. Welcome, Alex
 C. name'''
@@ -2354,7 +2356,13 @@ C. Error'''
 
                     # QUESTION 3
                     lesson5_reviewQuestion3 = '''\n3. What will this program display if the student's score is 70?\n
-score = 70if score >= 90:    print("Excellent")elif score >= 75:    print("Passed")else:    print("Failed")\n
+score = 70
+if score >= 90:    
+   print("Excellent")
+elif score >= 75:    
+   print("Passed")
+else:    
+   print("Failed")\n
 A. Passed
 B. Excellent
 C. Failed'''
@@ -2374,7 +2382,7 @@ C. Failed'''
                             print("\nInvalid answer! Please choose A, B, or C.")
                             continue
 
-                        if lesson5review_answer3 == "B":
+                        if lesson5review_answer3 == "C":
                             lesson5review_score += 1
                             print("\nCorrect! Well done!")
                             break
@@ -2436,7 +2444,9 @@ C. Failed'''
 
                     #QUESTION 1
                     lesson6_reviewQuestion1 = '''\n1. What is the result of this condition?\n
-has_student_id = Trueis_student = Falsehas_student_id and is_student\n
+has_student_id = True
+is_student = False
+has_student_id and is_student\n
 A. True
 B. False
 C. Both conditions are ignored.'''
@@ -2624,7 +2634,10 @@ C. 0, 1, 2, 3'''
 
                     # QUESTION 2
                     lesson7_reviewQuestion2 = '''\n2. Consider the following code. When will the loop stop?\n
-count = 1while count <= 3:    print(count)    count = count + 1\n
+count = 1
+while count <= 3:    
+    print(count)    
+    count = count + 1\n
 A. When count becomes 2
 B. When count becomes 3
 C. When count becomes 4'''
@@ -3099,7 +3112,7 @@ What I want to practice: {practice}
             time.sleep(3)
 
             print("\n" + "*" * 60)
-            print(f"          CONGRATULATIONS, {student_name}!")
+            print(f"              CONGRATULATIONS, {student_name}!")
             print("*" * 60)
 
             print("\nYou have successfully completed all Python Academy activities!")
@@ -3113,7 +3126,9 @@ What I want to practice: {practice}
             print("your Python programming journey.")
 
             print("\nKEEP LEARNING AND KEEP CODING!")
+            print("Enter 6 to exit the program")
             print("*" * 60)
+            
 
     elif dashboard_choice == "6":
         print("+" + "-" * 60 + "+")
